@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#conversor-moeda {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #D0D4D8;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversor-container,
+.exibe-resultado {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.valor-input, .valor-input-moeda {
+    display: inline-block;
+    width: 170px;
+    margin: 0 15px;
+}
+
+.valor-input-moeda {
+    width: 120px;
+}
+
+.moeda-input {
+    display: inline-block;
+    width: 180px;
+    margin: 0 15px;
+}
+
+.conversor-container fieldset {
+    margin: 10px auto;
+    border-radius: 50px 50px 0 0;
+    border: blue solid 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.550);
+    padding: 20px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.vlr-container,
+.moeda-origem-container,
+.moeda-destino-container,
+.btn-submit-container {
+    display: inline-block;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.vlr-container { width: 200px}
+.moeda-origem-container { width: 308px}
+.moeda-destino-container { width: 250px}
+
+@media screen and (max-width: 650px) {
+    .vlr-container,
+    .moeda-origem-container,
+    .moeda-destino-container {
+        min-width: 308px;
+        text-align: right;
+    }
+
+    .btn-submit-container {
+        min-width: 380px;
+        text-align: center;
+    }
+
+    .valor-input {
+        width: 180px;
+        margin: 0 -18px 0 15px;
+        text-align: center;
+    }
+
+    .temp-valor-input {
+        margin: 0px -5px 0 15px;
+    }
+
+    .valor-input-moeda {
+        margin: 0 15px;
+    }
+
+    .input-container {
+        min-width: 308px;
+        text-align: end;
+        margin: 5px auto;
+    }
+
+    .input-container, select {
+        width: 293px;
+    }
+}
+
+
+.ARS::after { content: " 🇦🇷"}
+.BRL::after { content: " 🇧🇷"}
+.CLP::after { content: " 🇨🇱"}
+.CNY::after { content: " 🇨🇳"}
+.EUR::after { content: " 🇪🇺"}
+.GBP::after { content: " 🇬🇧"}
+.JPY::after { content: " 🇯🇵"}
+.KRW::after { content: " 🇰🇷"}
+.USD::after { content: " 🇺🇸"}
+.UYU::after { content: " 🇺🇾"}
+
+.exibe-resultado {
+    margin: 10px auto;
+    border-radius: 0 0 50px 50px;
+    border: blue solid 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.550);
+    padding: 20px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.exibe-resultado div {
+    display: inline-block;
+    box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.350), 2px 2px 3px rgba(0, 0, 0, 0.350);
+    width: 300px;
+    padding: 15px;
+    margin: 10px 10px;
+}
+
+footer {
+    color: yellow;
+    margin-top: auto;
+}
+
+/* estilos de converteTemperatura */
+
+.conversor-temperatura .vlr-container {
+    width: auto;
+    min-width: 260px;
+}
+
+.input-container {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.input-container .form-label {
+    display: inline-block;
+    margin-right: 5px;
+}
+.input-container .form-select {
+    display: inline-block;
+}
+
+#input-origem, #input-destino {
+    width: auto;
+}
+
+option {
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(245, 71, 71, 0.38);
+    border: red solid 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.550);
+    border-radius: 50px;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 2px auto;
+}
+
+.navbar-nav.ml-auto {
+    margin-left: auto;
+}
+
+/* estilos de index */
+#home-page main {
+    display: block;
+    background-color: #E0FAFFFF;
+}
+
+#home-page main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh; /* Defina a altura total da div */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#home-page h2 {
+    font-size: 1.4em;
+}
+
+#home-page h3 {
+    font-size: 1.1em;
+}
+.cabecalho {
+    text-align: center;
+    margin: 15px auto 50px;
+}
+.redireciona-pg {
+    display: flex;
+    justify-content: center;
+}
+
+.redireciona-pg figure {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: blue solid 2px;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.550), -2px -2px 5px rgba(0, 0, 0, 0.550);
+    background-color: #F7F7F7;
+    padding: 5px;
+    transition: 0.7s all;
+}
+
+.redireciona-pg figure figcaption {
+    padding: 8px;
+}
+
+.redireciona-pg figure img {
+    height: 75px;
+    width: auto;
+}
+
+.redireciona-pg figure:hover {
+    transform: scale(1.1);
+}
+
+.built-with-container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.built-with-container .exibe-logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px; /* Opcional: Adiciona margem entre os elementos */
+}
+
+.built-with-container .exibe-logo:last-child {
+    margin-right: 0; /* Remove a margem à direita do último elemento */
+}
+
+/* estilos de error */
+
+#error-page figure {
+    height: 70vh;
+    width: auto;
+}
+
+
+
+
